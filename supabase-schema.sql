@@ -3,8 +3,12 @@
 CREATE TABLE IF NOT EXISTS waitlist (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   email TEXT NOT NULL UNIQUE,
+  phone_os TEXT,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
+
+-- If table already exists, run this to add the column:
+-- ALTER TABLE waitlist ADD COLUMN IF NOT EXISTS phone_os TEXT;
 
 -- Enable Row Level Security
 ALTER TABLE waitlist ENABLE ROW LEVEL SECURITY;

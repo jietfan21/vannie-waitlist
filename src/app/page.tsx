@@ -76,13 +76,13 @@ export default function Home() {
               Whether you&apos;re a skincare enthusiast, makeup collector, or any other type of beauty lover, in Vannie you can find a place to track your products, manage expiry dates, get usage insights, and never lose sight of your beauty collection again.
             </p>
 
-            {/* Count Me In Form */}
+            {/* Beta Signup Form */}
             <div className="mb-8">
               <h2 className="text-xl font-bold text-[#3D2C5C] mb-2">
                 Count Me In!
               </h2>
               <p className="text-[#6B7280] text-sm mb-4">
-                Get the early access, news & updates.
+                Join now to get exclusive early access and be one of the first 100 beta testers!
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-3">
